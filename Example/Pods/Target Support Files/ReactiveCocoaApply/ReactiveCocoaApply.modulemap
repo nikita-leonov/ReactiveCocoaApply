@@ -1,0 +1,6 @@
+framework module ReactiveCocoaApply {
+  umbrella header "ReactiveCocoaApply-umbrella.h"
+
+  export *
+  module * { export * }
+}
