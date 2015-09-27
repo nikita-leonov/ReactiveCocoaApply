@@ -1,6 +1,5 @@
 # ReactiveCocoaApply
 
-[![CI Status](http://img.shields.io/travis/Nikita Leonov/ReactiveCocoaApply.svg?style=flat)](https://travis-ci.org/Nikita Leonov/ReactiveCocoaApply)
 [![Version](https://img.shields.io/cocoapods/v/ReactiveCocoaApply.svg?style=flat)](http://cocoapods.org/pods/ReactiveCocoaApply)
 [![License](https://img.shields.io/cocoapods/l/ReactiveCocoaApply.svg?style=flat)](http://cocoapods.org/pods/ReactiveCocoaApply)
 [![Platform](https://img.shields.io/cocoapods/p/ReactiveCocoaApply.svg?style=flat)](http://cocoapods.org/pods/ReactiveCocoaApply)
