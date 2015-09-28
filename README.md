@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/ReactiveCocoaApply.svg?style=flat)](http://cocoapods.org/pods/ReactiveCocoaApply)
 [![Platform](https://img.shields.io/cocoapods/p/ReactiveCocoaApply.svg?style=flat)](http://cocoapods.org/pods/ReactiveCocoaApply)
 
-Functions for applying operators to signals and singal producers. Code is based on original impleemntation of `|>` from RAC3.
+Functions for applying operators to signals and singal producers. Code is based on original implementation of `|>` from RAC3.
 
 ## Usage
 
