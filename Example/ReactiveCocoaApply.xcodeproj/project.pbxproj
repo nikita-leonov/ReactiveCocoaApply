@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* ApplySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ApplySpec.swift */; };
-		C4B31D771106DF65BC2BFC8D /* Pods_ReactiveCocoaApply_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6772F20CC2875ECE03A13C3 /* Pods_ReactiveCocoaApply_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C4B31D771106DF65BC2BFC8D /* Pods_ReactiveCocoaApply_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6772F20CC2875ECE03A13C3 /* Pods_ReactiveCocoaApply_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */

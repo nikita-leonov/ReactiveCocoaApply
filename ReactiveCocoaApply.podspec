@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.dependency 'ReactiveCocoa', '~> 4.0.2-alpha-1'
+  s.dependency 'ReactiveCocoa', '~> 4.0.0-alpha-3'
 end
