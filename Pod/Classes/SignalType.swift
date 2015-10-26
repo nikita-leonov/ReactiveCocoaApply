@@ -12,7 +12,7 @@ extension SignalType {
     
     /// Applies a Signal operator to a Signal.
     
-    public func apply<X>(@noescape transform: Signal<T, E> -> X) -> X {
+    public func apply<X>(@noescape transform: Signal<Value, Error> -> X) -> X {
         return transform(self.signal)
     }
 }
