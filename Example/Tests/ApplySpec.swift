@@ -20,7 +20,7 @@ class SignalApply: QuickSpec {
                     let testPipe = Signal<Void, NoError>.pipe()
                     testPipe.0.apply(process).observeNext {}
                     
-                    sendNext(testPipe.1, ())
+                    testPipe.1.sendNext()
                 }
             }
             it("executes applied SignalProducer operator for a SignalProducer when it is started") {
