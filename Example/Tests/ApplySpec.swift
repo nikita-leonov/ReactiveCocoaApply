@@ -4,6 +4,7 @@ import Quick
 import Nimble
 import ReactiveCocoaApply
 import ReactiveCocoa
+import enum Result.NoError
 
 class SignalApply: QuickSpec {
     override func spec() {
