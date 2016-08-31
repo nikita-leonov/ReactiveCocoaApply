@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ReactiveCocoaApply"
-  s.version          = "0.2.6"
+  s.version          = "0.2.7"
   s.summary          = "ReactiveCocoa Singal and SignalProducer extensions for RAC4 for applying operators similar to |> from RAC3."
 
   s.homepage         = "https://github.com/nikita-leonov/ReactiveCocoaApply"
