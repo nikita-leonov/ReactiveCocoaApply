@@ -6,13 +6,12 @@
 //
 //
 
-import ReactiveCocoa
+import ReactiveSwift
 
-extension SignalType {
+extension SignalProtocol {
     
-    /// Applies a Signal operator to a Signal.
-    
-    public func apply<X>(@noescape transform: Signal<Value, Error> -> X) -> X {
+    /// Applies a Signal operator to a Signal.    
+    public func apply<X>(_ transform: @noescape (Signal<Value, Error>) -> X) -> X {
         return transform(self.signal)
     }
 }

@@ -3,7 +3,7 @@
 import Quick
 import Nimble
 import ReactiveCocoaApply
-import ReactiveCocoa
+import ReactiveSwift
 import enum Result.NoError
 
 class SignalApply: QuickSpec {
@@ -11,7 +11,7 @@ class SignalApply: QuickSpec {
         describe("apply function") {
             it("executes applied Signal operator for a Signal when it is observed") {
                 waitUntil { done in
-                    func process(signal: Signal<Void, NoError>) -> Signal<Void, NoError> {
+                    func process(_ signal: Signal<Void, NoError>) -> Signal<Void, NoError> {
                         return signal.filter { _ in
                             done()
                             return false
@@ -19,14 +19,14 @@ class SignalApply: QuickSpec {
                     }
                     
                     let testPipe = Signal<Void, NoError>.pipe()
-                    testPipe.0.apply(process).observeNext {}
+                    testPipe.0.apply(process).observeValues {}
                     
-                    testPipe.1.sendNext()
+                    testPipe.1.send(value: ())
                 }
             }
             it("executes applied SignalProducer operator for a SignalProducer when it is started") {
                 waitUntil { done in
-                    func process(signalProducer: SignalProducer<Void, NoError>) -> SignalProducer<Void, NoError> {
+                    func process(_ signalProducer: SignalProducer<Void, NoError>) -> SignalProducer<Void, NoError> {
                         return signalProducer.on(started: done)
                     }
                     SignalProducer<Void, NoError>.never
@@ -36,7 +36,7 @@ class SignalApply: QuickSpec {
             }
             it("executes applied Signal operator for a SignalProducer when it is started") {
                 waitUntil { done in
-                    func process(signal: Signal<Void, NoError>) -> Signal<Void, NoError> {
+                    func process(_ signal: Signal<Void, NoError>) -> Signal<Void, NoError> {
                         return signal.filter { _ in
                             done()
                             return false
