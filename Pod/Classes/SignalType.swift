@@ -11,7 +11,7 @@ import ReactiveSwift
 extension SignalProtocol {
     
     /// Applies a Signal operator to a Signal.    
-    public func apply<X>(_ transform: @noescape (Signal<Value, Error>) -> X) -> X {
+    public func apply<X>(_ transform: (Signal<Value, Error>) -> X) -> X {
         return transform(self.signal)
     }
 }

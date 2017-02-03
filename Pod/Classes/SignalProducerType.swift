@@ -21,7 +21,7 @@ extension SignalProducerProtocol {
     }
     
     /// Applies a SignalProducer operator to a SignalProducer.
-    public func apply<X>(_ transform: @noescape (SignalProducer<Value, Error>) -> X) -> X {
+    public func apply<X>(_ transform: (SignalProducer<Value, Error>) -> X) -> X {
         return transform(self.producer)
     }
 }
