@@ -1,0 +1,28 @@
+PODS:
+  - Nimble (5.1.1)
+  - Quick (1.0.0)
+  - ReactiveCocoaApply (2.0.0):
+    - ReactiveSwift (~> 1.1.0)
+  - ReactiveSwift (1.1.0):
+    - Result (~> 3.1)
+  - Result (3.2.1)
+
+DEPENDENCIES:
+  - Nimble (~> 5.1.1)
+  - Quick (~> 1.0.0)
+  - ReactiveCocoaApply (from `../`)
+
+EXTERNAL SOURCES:
+  ReactiveCocoaApply:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  ReactiveCocoaApply: af04a976f26a80efb07352d3b46aead18d530cd6
+  ReactiveSwift: 2f4e4a02e5a5c87ea63f5fe667163ce2a67cbb57
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+
+PODFILE CHECKSUM: a746abf7371a0568695488b62a0489e1a37624f5
+
+COCOAPODS: 1.2.0
